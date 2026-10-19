@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrasi Akun Belajar</title>
+    <link rel="stylesheet" href="style_belajar.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registrasi Akun Belajar</h2>
+        <p class="subtitle">Lengkapi formulir di bawah ini dengan benar</p>
+        
+        <!-- Mengarahkan ke halaman sukses_login.html saat tombol daftar diklik -->
+        <form action="sukses_login.html" method="GET">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap" required>
+            
+            <label>Alamat Email</label>
+            <input type="email" placeholder="nama@contoh.user" required>
+            
+            <label>Kata Sandi</label>
+            <input type="password" placeholder="Minimal 8 karakter" required>
+            
+            <label>Konfirmasi Kata Sandi</label>
+            <input type="password" placeholder="Ulangi kata sandi" required>
+            
+            <label>Status Pengguna</label>
+            <select required>
+                <option value="" disabled selected>Pilih status</option>
+                <option value="siswa">Siswa</option>
+                <option value="guru">Guru</option>
+            </select>
+            
+            <button type="submit" class="btn">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>
